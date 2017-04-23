@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+    <title>Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- fun font and bootstrap links -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Content wrapped in a div to place everything in the center of the page -->
+    <div id="whole-page" class="container col-md-6 col-md-offset-3">
+        <div class="text">
+            <h1>Application Form</h1>
+            <p>Be the first to get the best tips and resources for hiring and recruiting top quality candidates.</p>
+        </div>
+        <!-- Begin form to submit info through POST request -->
+        <form action="/application-success" method="POST">
+            <input type="text" name="first_name" placeholder="First Name" required>
+            <input type="text" name="last_name" placeholder="Last Name" required>
+                <select name="job" required>
+                    <option value="SWE">Software Engineer</option>
+                    <option value="QA">QA Engineer</option>
+                    <option value="PM">Product Manager</option>
+                </select>
+            <div class="submit">
+                <input type="submit" class="btn btn-default">
+            </div>        
+    </form>
+    </div>
+</body>
+</html>
